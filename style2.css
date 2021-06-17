@@ -49,7 +49,6 @@ a{
 }
 
 .menu:hover{
-	opacity:barra1 ;
 	box-shadow: 0 0 0 0px var(--clr-bg), 0 0 0 0px var(--clr-bg),inset 0 0 1.5em 0 var(--clr-neon), 0 0 1.5em 0 var(--clr-neon) ;
 }
 
@@ -159,7 +158,6 @@ input:checked ~ label .barra1::after{
 input:checked ~ label .menu {
 	border: var(--clr-neon) 1px solid;
 	box-shadow: 0 0 120vmax 120vmax var(--clr-bg);
-	border: none;
 	
 }
 
