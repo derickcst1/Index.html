@@ -1,6 +1,6 @@
 :root {
-	--clr-neon: hsl(317 100% 54%);
-	--clr-bg: hsl(323 21% 16%);
+	--clr-neon: white;
+	--clr-bg: rgba(255,246,161,0.5);
 }
 body{
 	background-image: url("img/bg2.png");
@@ -39,11 +39,11 @@ a{
 	position: fixed;
 	top: 20px;
 	left: 20px;
-	background: #000;
+	background: var(--clr-bg);
 	height: 90px;
 	width: 90px;
 	border-radius: 50%;
-	box-shadow: 0 0 0 0px #000, 0 0 0 0px #000;
+	box-shadow: 0 0 0 0px var(--clr-bg), 0 0 0 0px var(--clr-bg);
 	box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
 	transition: box-shadow 0.5s cubic-bezier(0,1.01,.82,1);
 }
@@ -97,14 +97,14 @@ a{
 .neon-button:hover,
 .neon-button:focus{
 	background: var(--clr-neon);
-	color: var(--clr-bg);
+	color: black;
 	text-shadow: none;
+	text
 }
 
 .neon-button:hover::after,
 .neon-button:hover::before{
 	opacity: 1;
-
 }
 
 .neon-button:hover::before{
@@ -158,9 +158,15 @@ input:checked ~ label .barra1::after{
 }
 input:checked ~ label .menu {
 	border: var(--clr-neon) 1px solid;
-	box-shadow: 0 0 0 120vw black, 0 0 0 120vh black;
+	box-shadow: 0 0 120vmax 120vmax var(--clr-bg);
 	border: none;
+	
 }
+
+input:checked ~ label body{
+	filter:blur(120vmax);
+}
+
 input:checked ~ ul {
 	opacity: 1;
 }
