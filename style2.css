@@ -2,10 +2,13 @@
 	--clr-neon: white;
 	--clr-bg: rgba(255,246,161,0.5);
 }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 body{
+	font-family: 'Roboto', sans-serif;
 	background-image: url("img/bg2.png");
 	background-repeat: no-repeat;
- 	height: 100vh;
+	background-size: 100%;
+ 	
 }
 *{
 	padding: 0;
